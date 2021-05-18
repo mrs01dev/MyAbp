@@ -256,10 +256,10 @@ namespace MyAbp
             app.UseJwtTokenMiddleware();
 
            
-            if (MultiTenancyConsts.IsEnabled)
-            {
-                app.UseMultiTenancy();
-            }
+            //if (MultiTenancyConsts.IsEnabled)
+            //{
+            //    app.UseMultiTenancy();
+            //}
 
             app.UseIdentityServer();
             app.UseAuthorization();
